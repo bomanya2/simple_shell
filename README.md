@@ -32,4 +32,4 @@ This file contains the details of all the individuals that contributed to this s
 
 ## Authors
 - [@bomanya2](https://www.github.com/bomanya2)
-- [@Allan Ndonga] (https://www.github.com/alz254)
+- [Allan Ndonga] (https://www.github.com/alz254)
