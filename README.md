@@ -1,35 +1,72 @@
-## 0x16. C - Simple Shell
+# Project 0x15 - Simple_shell
 
+simple_shell is a basic command interpreter that executes commands from the standard input or from a file.
 
-## Resources📚
-   Read or Watch
+## File Contents
+This repository contains the following files:
 
- - [Unix shell](https://alx-intranet.hbtn.io/rltoken/f0YU9TAhniMXWlSXtb64Yw)
- - [Thompson shell](https://alx-intranet.hbtn.io/rltoken/7LJOp2qP7qHUcsOK2-F3qA)
- - [Ken Thompson](https://alx-intranet.hbtn.io/rltoken/wTSu31ZP1f7fFTJFgRQC7w)
+|   **File**   |   **Description**   |
+| -------------- | --------------------- |
+| shell.c | the main function |
+| shell.h | header file |
+| tokens.c | convert into tokens |
+| path.c | checks for the path |
+| free.c | frees double pointer |
+| _printenv.c | prints the enviroment |
+| signal.c | recreates the ctr-c command |
+| shell_div.c | functions used |
+| man_1_simple_shell | manual |
 
+## Installation
+Clone the repository. Compile the ".c" files. Run executable.
 
-## Learning Objectives💡
+```
+$ git clone https://github.com/felipemontes/simple_shell.git
+```
 
-What we learned from this project:
+## Compile and start
 
-- Approaching a Project
-- Everything you need to know to start coding your own shell
+To start simple_shell you just need to compile using
 
+```
+gcc -Wall -Werror   -Wextra -pedantic *.c -o hsh.
+```
 
-## Details
-This file contains the details of all the individuals that contributed to this shell project.
+### run
 
-## Features
-- DIsplay a prompt and wait for the user to type a command. A command-line always ends with a new line
-- The prompt is displayed again each time a command has been executed.
-- The command lines are simple, no semicolons, no pipes, no redirections, or any other advanced features
-- The command lines are made only of one word.No arguement will be passed to the programs.
-- If an executable is not found the shell prints an error message and displayu the prompt again.
+```
+./hsh
+```
 
+## Usage (Interactive mode)
 
+```
+hsh$ /bin/ls
+hsh$ ls -la
+hsh$ pwd
+```
+## Non - interactive mode
 
+```
+hsh$ echo "/bin/ls" | ./hsh
+hsh main.c shell.c test_ls_2
+hsh$
+hsh$ cat test_ls_2
+/bin/ls
+/bin/ls
+hsh$
+hsh$ cat test_ls_2 | ./hsh
+hsh main.c shell.c test_ls_2
+hsh main.c shell.c test_ls_2
+hsh$
+```
+
+## Builtins
+```bash
+env
+```
 
 ## Authors
-- [@bomanya2](https://www.github.com/bomanya2)
-- [@Allan Ndonga](https://www.github.com/bomanya2)
+[Brian Omanya](https://github.com/bomanya2)
+
+[Allan Ndonga](https://github.com/alz254)
